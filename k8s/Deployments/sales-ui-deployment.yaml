@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: sales-ui-container
-          image: kubectlandchill/sales-invoice-ui:v1.0.0
+          image: kubectlandchill/sales-invoice-ui:v1.1.0
           ports:
             - containerPort: 8000
           envFrom:
