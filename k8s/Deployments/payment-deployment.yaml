@@ -25,6 +25,13 @@ spec:
           image: kubectlandchill/sales-payment-service:v1.1.0
           ports:
             - containerPort: 3000
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "200Mi"
+            request:
+              memory: "256Mi"
+              cpu: "100Mi"
           envFrom:
             - secretRef:
                 name: backend-secret
