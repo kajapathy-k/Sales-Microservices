@@ -38,7 +38,7 @@ spec:
   - metadata:
       name: mysql-data
     spec:
-      storageclassName: sales-storageclass
+      storageClassName: sales-storageclass
       accessModes:
       - ReadWriteMany
       resources:
